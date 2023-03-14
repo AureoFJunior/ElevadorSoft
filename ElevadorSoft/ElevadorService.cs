@@ -12,7 +12,7 @@ namespace ProvaAdmissionalCSharpApisul
 
         private List<ElevadorInfo> BuscarInformacoesElevador()
         {
-            using (StreamReader r = new StreamReader(@"C:\Users\Aureo\source\repos\ElevadorSoft\ElevadorSoft\input.json"))
+            using (StreamReader r = new StreamReader("../../../input.json"))
             {
                 string json = r.ReadToEnd();
                 List<ElevadorInfo> elevadorInfos = JsonConvert.DeserializeObject<List<ElevadorInfo>>(json);
